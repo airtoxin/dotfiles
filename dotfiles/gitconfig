@@ -1,0 +1,22 @@
+[user]
+	name = airtoxin
+	email = airtoxin@icloud.com
+[color]
+	ui = auto
+[alias]
+	ch = checkout
+	cm = commit -m
+	st = !git status && echo --- branch && git branch -v && echo --- stash && git stash list
+	br = branch
+	hi = log --pretty=format:'%Cred%h%Creset - %C(green)%ad%Creset | %s%C(bold yellow)%d%Creset %C(bold blue)[%an]%Creset' --graph --date=short
+	ignore = !"f() { local s=$1; shift; while [ $# -gt 0 ]; do s="$s,$1"; shift; done; curl "http://www.gitignore.io/api/$s"; }; f"
+[core]
+	autocrlf = input
+	safecrlf = true
+	excludesfile = /Users/airtoxin/.gitignore
+[pager]
+        log = diff-highlight | less
+        show = diff-highlight | less
+        diff = diff-highlight | less
+[merge]
+	tool = opendiff

@@ -1,0 +1,25 @@
+# user alias
+alias mongo="mongo ${HOME}/.mongorc.js --shell"
+alias toutf8="nkf -w --overwrite ${1}"
+alias rm='rmtrash'
+alias ll="ls -lh"
+alias la="ls -lha"
+alias cd..="cd .."
+function fname() {
+    echo "arguments: ${1}, ${2}"
+    find ${1} -name ${2}
+}
+
+# bash-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
+# direnv
+eval "$(direnv hook $0)"
+
+# git completion
+source ${HOME}/.git-prompt.sh
+source ${HOME}/.git-completion.bash
+GIT_PS1_SHOWDIRTYSTATE=true
+export PS1='\[\033[32m\]\h\[\033[00m\]:\[\033[34m\]\W\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '

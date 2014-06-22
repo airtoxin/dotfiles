@@ -1,0 +1,19 @@
+##### generate from dotfile #####
+if [ -f ~/.bashrc ] ; then
+    . ~/.bashrc
+fi
+
+export EDITOR="subl"
+export JAVA_HOME="/Library/Java/home"
+export HADOOP_HOME="/usr/local/Cellar/hadoop/*/"
+export MAHOUT_HOME="/usr/local/Cellar/mahout/*/"
+
+#homebrew cask
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
+
+# Cairo(dependency of node_module canvas)
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig
+
+export PATH="$HOME/.bin:${PATH}"
+
+##### end #####
