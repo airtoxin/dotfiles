@@ -10,13 +10,22 @@
 	br = branch
 	hi = log --pretty=format:'%Cred%h%Creset - %C(green)%ad%Creset | %s%C(bold yellow)%d%Creset %C(bold blue)[%an]%Creset' --graph --date=short
 	ignore = !"f() { local s=$1; shift; while [ $# -gt 0 ]; do s="$s,$1"; shift; done; curl "http://www.gitignore.io/api/$s"; }; f"
+	rmall = rm `git ls-files --deleted`
+	unstage = reset HEAD
+	p = add -p
+	amd = commit --amend
+	todo = !"f() { for fn in `git diff --name-only master`;do if [ -f $fn ];then git grep -i todo $fn;fi done };f"
 [core]
 	autocrlf = input
 	safecrlf = true
-	excludesfile = /Users/airtoxin/.gitignore
+	excludesfile = ~/.gitignore
 [pager]
         log = diff-highlight | less
         show = diff-highlight | less
         diff = diff-highlight | less
 [merge]
-	tool = opendiff
+	tool = p4merge
+[mergetool "p4merge"]
+	path = /Applications/p4merge.app/Contents/MacOS/p4merge
+	keepTemporaries = false
+	trustExitCode = false
