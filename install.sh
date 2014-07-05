@@ -146,3 +146,6 @@ brew install opencv
 brew cask alfred link
 brew cleanup
 brew cask cleanup
+
+defaults write com.apple.screencapture location ~/Dropbox/Public/screenshots
+defaults write com.apple.screencapture name "screenshot"
