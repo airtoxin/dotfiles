@@ -1,0 +1,7 @@
+[
+    { "keys": ["ctrl+w"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
+    { "keys": ["ctrl+l"], "command": "move", "args": {"by": "characters", "forward": true } },
+    { "keys": ["ctrl+h"], "command": "move", "args": {"by": "characters", "forward": false } },
+    { "keys": ["ctrl+j"], "command": "move", "args": {"by": "lines", "forward": true } },
+    { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": false } }
+]
