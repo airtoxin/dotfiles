@@ -32,6 +32,7 @@ brew install go
 brew install graphviz
 brew install jq
 brew install nkf
+brew install maven
 brew install mongodb
 brew install node
 brew install rename
