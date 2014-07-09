@@ -1,3 +1,8 @@
+# bash-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
 # user alias
 alias mongo="mongo ${HOME}/.mongorc.js --shell"
 alias toutf8="nkf -w --overwrite ${1}"
@@ -6,15 +11,13 @@ alias ls="ls -G"
 alias ll="ls -lhFG"
 alias la="ls -lhaG"
 alias cd..="cd .."
+alias grep="grep --with-filename --line-number --color=always -R"
+alias ag="ag --color"
+alias less="less -R"
 function fname() {
     echo "arguments: ${1}, ${2}"
     find ${1} -name ${2}
 }
-
-# bash-completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
 
 # direnv
 eval "$(direnv hook $0)"
