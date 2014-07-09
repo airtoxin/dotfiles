@@ -139,9 +139,6 @@ pip install mecab-python
 pip install csvkit
 pip install Pillow
 
-# sublime-text
-ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/* ${HOME}/.bin/
-
 brew install opencv
 
 brew cask alfred link
