@@ -32,6 +32,7 @@ brew tap airtoxin/mycask
 brew install bash-completion
 brew install direnv
 brew install go
+brew install git
 brew install graphviz
 brew install jq
 brew install nkf
