@@ -2,6 +2,9 @@
 
 WORK_DIR=$(pwd)
 
+# override path
+sudo cat ${WORK_DIR}/paths > /etc/paths
+
 cd appendfiles
 for filename in *; do
     echo ${filename} >> ${HOME}/\.${filename}
