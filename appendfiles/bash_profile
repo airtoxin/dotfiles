@@ -1,22 +1,36 @@
 ##### generate from dotfile #####
 if [ -f ~/.bashrc ] ; then
-    . ~/.bashrc
+. ~/.bashrc
 fi
 
+export PATH="/usr/local/bin:${PATH}"
+export PATH="/usr/local/sbin:${PATH}"
+export PATH="${HOME}/.bin:${PATH}"
+
+# default editor settings
 export EDITOR="subl"
+
+# hadoop
+export HADOOP_HOME="/usr/local/Cellar/hadoop/*"
+export HADOOP_OPTS="-Djava.security.krb5.realm=OX.AC.UK -Djava.security.krb5.kdc=kdc0.ox.ac.uk:kdc1.ox.ac.uk"
+
+# mahout
 export JAVA_HOME="/Library/Java/home"
-export HADOOP_HOME="/usr/local/Cellar/hadoop/*/"
-export MAHOUT_HOME="/usr/local/Cellar/mahout/*/"
+export MAHOUT_HOME="/usr/local/Cellar/mahout/*"
+
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:${PATH}"
+
+# node global modules
+export PATH="/usr/local/lib/node_modules:${PATH}"
+
+# for Cairo(dependency of Cairo of node_modules of canvas)
+export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig:${PKG_CONFIG_PATH}"
 
 # homebrew cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
 
-# node_modules
-export PATH="/usr/local/lib/node_modules:${PATH}"
-
-# Cairo(dependency of node_module canvas)
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig
-
-export PATH="$HOME/.bin:${PATH}"
+# Golang
+export GOPATH="${HOME}/go"
 
 ##### end #####
