@@ -4,7 +4,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # user alias
-alias mongo="mongo ${HOME}/.mongorc.js --shell"
 alias toutf8="nkf -w --overwrite ${1}"
 alias rm='rmtrash'
 alias ls="ls -G"
