@@ -92,6 +92,8 @@ brew cask install transmission
 brew cask install origin
 brew cask install brettspielwelt
 brew cask install isse
+brew cask install virtualbox
+brew cask install vagrant
 
 # mecab
 brew install mecab
