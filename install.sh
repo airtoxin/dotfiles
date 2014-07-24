@@ -28,6 +28,7 @@ brew tap homebrew/science
 brew tap caskroom/cask
 brew tap sanemat/font
 brew tap airtoxin/mycask
+brew tap peco/peco
 
 brew install bash-completion
 brew install direnv
