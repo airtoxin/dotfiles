@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+async.waterfall( [
+    function ( next ) {
+        ${1:// body...}
+    }
+], function ( error ) {
+    // body...
+} );
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>waterfall..</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

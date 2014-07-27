@@ -1,0 +1,4 @@
+{
+    "shell_cmd": "go fmt $file & go build $file",
+    "selector": "source.go"
+}

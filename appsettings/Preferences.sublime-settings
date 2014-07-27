@@ -5,14 +5,14 @@
 		"PATH": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/.bin"
 	},
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Color Scheme - Default/IDLE.tmTheme",
+	"color_scheme": "Packages/User/IDLE (SL).tmTheme",
 	"disable_tab_abbreviations": true,
 	"drag_text": false,
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Ricty",
-	"font_size": 23,
+	"font_size": 24,
 	"highlight_modified_tabs": true,
 	"hot_exit": true,
 	"ignored_packages":
@@ -25,6 +25,7 @@
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,
 	"tab_size": 4,
+	"theme": "Flatland Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
