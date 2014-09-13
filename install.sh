@@ -97,6 +97,7 @@ brew cask install brettspielwelt
 brew cask install isse
 brew cask install virtualbox
 brew cask install vagrant
+brew cask install clipmenu
 
 # mecab
 brew install mecab
