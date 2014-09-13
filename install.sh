@@ -54,6 +54,7 @@ brew install wget
 brew install peco
 brew install w3m
 brew install ansible
+brew install bash
 
 brew install brew-cask
 
